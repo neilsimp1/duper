@@ -1,4 +1,6 @@
 *.csproj.user
 *.csproj
+*.sln
+*.suo
 obj/
 bin/
