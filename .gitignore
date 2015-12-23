@@ -1,6 +1,7 @@
 *.csproj.user
 *.csproj
+*.vdproj
 *.sln
 *.suo
-obj/
-bin/
+duper/obj/
+duper/bin/
