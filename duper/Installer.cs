@@ -19,7 +19,7 @@ namespace duper{
 			//add registry key
 			Microsoft.Win32.RegistryKey key;
 			key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey("*").OpenSubKey("shell").CreateSubKey("Backup with Duper").CreateSubKey("command");
-			key.SetValue("(Default)", "%WINDIR%\\System32\\duper.exe", Microsoft.Win32.RegistryValueKind.String);
+			key.SetValue("(Default)", "%WINDIR%\\System32\\duper.exe %1", Microsoft.Win32.RegistryValueKind.String);
 			key.Close();
 		}
 	}
